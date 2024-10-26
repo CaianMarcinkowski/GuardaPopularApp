@@ -6,12 +6,10 @@ class MusicDetailPage extends StatefulWidget {
     super.key,
     required this.title,
     required this.image,
-    required this.videoUrl,
   });
 
   final String title;
   final String image;
-  final String videoUrl;
 
   @override
   State<MusicDetailPage> createState() => _MusicDetailPageState();
@@ -23,7 +21,7 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset(widget.videoUrl)
+    _controller = VideoPlayerController.asset('')
       ..initialize().then((_) {
         setState(() {});
         _controller.play();
