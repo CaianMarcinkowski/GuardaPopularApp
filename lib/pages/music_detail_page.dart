@@ -106,7 +106,7 @@ class _MusicDetailPageState extends State<MusicDetailPage> {
                     ],
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
