@@ -9,23 +9,28 @@ class HomePage extends StatelessWidget {
     MusicListItem(
       imageUrl: 'assets/images/camisa_vermelha.png',
       title: 'Camisa vermelha',
-      lyrics: 'Album 1',
-      duration: Duration(minutes: 3, seconds: 15),
+      lyrics:
+          'Inter, estaremos contigo \nTu és minha paixão! \nNão importa o que digam \nSempre levarei comigo \nMinha camisa vermelha \nE a cachaça na mãos\n O Gigante me espera\n Para começar a festa!\n Xalaialaiaa\n Xalaialaiaa\n Xalaialaiaa!\n Você me deixa doidão!\n Xalaialaiaa\n Xalaialaiaa\n Xalaialaiaa!\n Inter do meu coração!\n Xalaialaiaa\n Xalaialaiaa\n Xalaialaiaa!',
+      duration: const Duration(minutes: 3, seconds: 46),
       videoUrl: 'assets/videos/camisa_vermelha.mp4',
+      author: 'Endrigo Giacomin',
     ),
     MusicListItem(
-      imageUrl: 'assets/images/gp_02.jpg',
+      imageUrl: 'assets/images/inter_querido.png',
       title: 'Inter querido',
-      lyrics: 'Album 1',
-      duration: Duration(minutes: 3),
-      videoUrl: '/assets/videos/camisa_vermelha.mp4',
+      lyrics: 'Inter \nInter querido \nPra cima deles \nPopular está contigo',
+      duration: const Duration(minutes: 1, seconds: 15),
+      videoUrl: 'assets/videos/inter_querido.mp4',
+      author: 'Guarda Popular',
     ),
     MusicListItem(
-      imageUrl: 'assets/images/gp_03.jpg',
-      title: 'Nada muda este sentimento',
-      lyrics: 'Album 1',
-      duration: Duration(minutes: 3),
-      videoUrl: '/assets/videos/camisa_vermelha.mp4',
+      imageUrl: 'assets/images/sempre_louco_atras_do_gol.png',
+      title: 'Sempre louco atras do gol',
+      lyrics:
+          'Sempre louco atras do gol acedendo um do bom \nEU VOU ... MATAR UM PUTO TRICOLOR \nE depois de me chapar e a cerveja acabar \nEU VOU ... MATAR UM PUTO TRICOLOR \nVamo inter hoje temos que vencer \nVamo inter hoje temos que vencer \nDale dale dale ôôô',
+      duration: const Duration(minutes: 2, seconds: 23),
+      videoUrl: 'assets/videos/sempre_louco_atras_do_gol.mp4',
+      author: 'Guarda Popular',
     ),
     MusicListItem(
       imageUrl: 'assets/images/gp_04.jpg',
@@ -33,6 +38,7 @@ class HomePage extends StatelessWidget {
       lyrics: 'Album 1',
       duration: Duration(minutes: 3),
       videoUrl: '/assets/videos/camisa_vermelha.mp4',
+      author: 'Guarda Popular',
     ),
 
     // Adicione mais músicas conforme necessário
@@ -63,8 +69,10 @@ class HomePage extends StatelessWidget {
                       builder: (context) => MusicDetailPage(
                         title: music.title,
                         image: music.imageUrl,
+                        lyric: music.lyrics,
                         videoUrl: music.videoUrl,
                         duration: music.duration,
+                        author: music.author,
                       ),
                     ),
                   );
@@ -75,6 +83,7 @@ class HomePage extends StatelessWidget {
                   lyrics: music.lyrics,
                   duration: music.duration,
                   videoUrl: music.videoUrl,
+                  author: music.author,
                 ),
               ),
           ],
