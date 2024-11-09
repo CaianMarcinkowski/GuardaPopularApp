@@ -9,6 +9,7 @@ class MusicListItem extends StatelessWidget {
     required this.lyrics,
     required this.duration,
     required this.videoUrl,
+    required this.author,
   });
 
   final String imageUrl;
@@ -16,6 +17,7 @@ class MusicListItem extends StatelessWidget {
   final String lyrics;
   final Duration duration;
   final String videoUrl;
+  final String author;
 
   final GlobalKey _backgroundImageKey = GlobalKey();
 

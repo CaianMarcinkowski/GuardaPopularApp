@@ -63,10 +63,14 @@ flutter:
   assets:
     - assets/images/logo_without_background.png
     - assets/images/camisa_vermelha.png
-    - assets/images/gp_02.jpg
-    - assets/images/gp_03.jpg
+    - assets/images/inter_querido.png
+    - assets/images/sempre_louco_atras_do_gol.png
     - assets/images/gp_04.jpg
+
+    # videos
     - assets/videos/camisa_vermelha.mp4
+    - assets/videos/inter_querido.mp4
+    - assets/videos/sempre_louco_atras_do_gol.mp4
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
